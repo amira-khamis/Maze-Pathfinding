@@ -44,20 +44,6 @@ Each algorithm is executed on the same maze to allow fair comparison.
 - Execution time
 - Path optimality
 
-## Project Structure
-
-maze-project/
-├──main.py
-├──maze.py
-├──algorithms/
-│├── bfs.py
-│├── dfs.py
-│├── ids.py
-│├── ucs.py
-│└── astar.py
-└──README.md
-
-
 ## Requirements
 
 - Python 3.6 or higher
@@ -85,6 +71,3 @@ Follow the on-screen instructions to:
 License
 
 This project is for educational purposes.
-3. **الهيكل**: جمعت بين محتوى الصورتين بشكل متسق ومنطقي.
-
-يمكنك نسخ هذا المحتوى وحفظه في ملف باسم README.md وسيظهر بشكل جميل ومنظم على GitHub أو أي منصة تدعم Markdown.
