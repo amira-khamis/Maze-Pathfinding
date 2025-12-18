@@ -44,19 +44,6 @@ Each algorithm is executed on the same maze to allow fair comparison.
 - Execution time
 - Path optimality
 
-## Project Structure
-
-maze-project/
-├──main.py
-├──maze.py
-├──algorithms/
-│├── bfs.py
-│├── dfs.py
-│├── ids.py
-│├── ucs.py
-│└── astar.py
-└──README.md
-
 
 ## Requirements
 
