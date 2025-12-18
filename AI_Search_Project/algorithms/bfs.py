@@ -1,0 +1,52 @@
+from collections import deque
+
+class BFS:
+    def __init__(self):
+        self.explored_nodes = []
+    
+    def solve(self, maze):
+        """Solve maze using BFS algorithm"""
+        start = maze.start
+        goal = maze.goal
+        grid = maze.grid
+        
+        # Directions: up, down, left, right
+        directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+        
+        # Initialize data structures
+        queue = deque([start])
+        visited = set([start])
+        parent = {start: None}
+        self.explored_nodes = [start]
+        
+        while queue:
+            current = queue.popleft()
+            
+            # Check if we reached the goal
+            if current == goal:
+                # Reconstruct path
+                path = []
+                while current is not None:
+                    path.append(current)
+                    current = parent[current]
+                return path[::-1]  # Reverse to get start->goal
+            
+            # Explore neighbors
+            x, y = current
+            for dx, dy in directions:
+                nx, ny = x + dx, y + dy
+                neighbor = (nx, ny)
+                
+                # Check bounds
+                if (0 <= nx < maze.width and 0 <= ny < maze.height and 
+                    grid[ny][nx] == 0 and  # Not a wall
+                    neighbor not in visited):
+                    
+                    queue.append(neighbor)
+                    visited.add(neighbor)
+                    parent[neighbor] = current
+                    self.explored_nodes.append(neighbor)
+        
+        # No path found
+        print("[BFS] No path found")
+        return []

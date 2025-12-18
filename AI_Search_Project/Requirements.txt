@@ -1,0 +1,14 @@
+# Maze Pathfinding Algorithms Visualizer
+# Requirements file
+
+# Core visualization library
+matplotlib>=3.5.0
+
+# Note: The following are Python standard library modules
+# included for reference only:
+# - collections
+# - heapq
+# - time
+# - sys
+# - math
+# - deque
