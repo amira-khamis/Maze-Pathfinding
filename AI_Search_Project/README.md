@@ -1,95 +1,51 @@
-Maze Pathfinding Algorithms Visualizer
+Maze Pathfinding
+Problem Description
+Maze pathfinding involves navigating a grid from a start position to a goal position.
+The maze contains walls (blocked cells) and free cells.
+The objective is to find a valid path and compare how different search algorithms behave.
 
-An educational Python project for visualizing and comparing classical AI search algorithms on a 2D maze.
-
+Why This Problem?
+The maze has a well-defined state space
+You can encode the maze as a graph
+The goal state is explicit
+Algorithms behave differently (BFS vs DFS vs A etc.*)
 Overview
-
+An educational Python project for visualizing and comparing classical AI search algorithms on a 2D maze.
 The project solves a maze by finding a path from a start position to a goal using different search strategies.
 Each algorithm is executed on the same maze to allow fair comparison.
 
 Implemented Algorithms
-
 Breadth-First Search (BFS)
-
 Depth-First Search (DFS)
-
 Iterative Deepening Search (IDS)
-
 Uniform Cost Search (UCS)
-
 A* Search
-
 Key Features
-
 Interactive maze visualization using matplotlib
-
 Animated mouse moving toward the cheese (goal)
-
 Step-by-step path animation
-
 Comparison of algorithm performance
-
 Terminal-based menu for user interaction
-
 Performance Metrics
-
 Path length
-
 Number of explored nodes
-
 Execution time
-
 Path optimality
-
- Project Structure
-maze-project/
-├── main.py
-├── maze.py
-├── algorithms/
-│   ├── bfs.py
-│   ├── dfs.py
-│   ├── ids.py
-│   ├── ucs.py
-│   └── astar.py
-└── README.md
-
 Requirements
-
 Python 3.6 or higher
-
 matplotlib
-
 Installation
-
-Install required packages:
-
-pip install matplotlib
+Install required packages: bash pip install matplotlib
 
 Usage
 
-Run the main program:
+Run the main script:
 
-python main.py
+bash python main.py
 
+Follow the on-screen instructions to:
 
-Use the menu to:
-
-View individual algorithm solutions
-
-Compare all algorithms
-
-Generate a new maze
-
-Exit the program
-
-Educational Value
-
-This project helps in understanding:
-
-How AI search algorithms work
-
-Differences between uninformed and informed search
-
-Trade-offs between speed, memory, and optimality
-
+Generate or load a maze
+Choose a search algorithm
+Visualize the pathfinding process
 Happy Pathfinding! 🐭🧀
