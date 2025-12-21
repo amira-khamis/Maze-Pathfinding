@@ -204,7 +204,7 @@ while True:
         print("-"*80)
         
         for name, data in results.items():
-            # حساب النقاط
+        
             min_path = min(r["path_length"] for r in results.values())
             min_time = min(r["exec_time_ms"] for r in results.values())
             min_explored = min(r["explored_nodes"] for r in results.values())
