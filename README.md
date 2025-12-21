@@ -57,7 +57,8 @@ Install required packages:
 bash
 pip install matplotlib
 
-Usage
+
+##Usage
 
 Run the main script:
 
