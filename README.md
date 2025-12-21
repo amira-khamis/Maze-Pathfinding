@@ -43,6 +43,8 @@ Each algorithm is executed on the same maze to allow fair comparison.
 - Number of explored nodes
 - Execution time
 - Path optimality
+- Success Rate
+- memory efficiency
 
 ## Requirements
 
