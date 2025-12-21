@@ -23,7 +23,7 @@ class BFS:
             current = queue.popleft()
             
             if current == goal:
-                # Reconstruct path
+               
                 path = []
                 while current is not None:
                     path.append(current)
@@ -37,7 +37,7 @@ class BFS:
                 neighbor = (nx, ny)
                 
                 if (0 <= nx < maze.width and 0 <= ny < maze.height and 
-                    grid[ny][nx] == 0 and  # Not a wall
+                    grid[ny][nx] == 0 and 
                     neighbor not in visited):
                     
                     queue.append(neighbor)
@@ -45,6 +45,6 @@ class BFS:
                     parent[neighbor] = current
                     self.explored_nodes.append(neighbor)
         
-        # No path found
+       
         print("[BFS] No path found")
         return []
