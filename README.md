@@ -13,7 +13,7 @@ The objective is to find a valid path and compare how different search algorithm
 - The maze has a well-defined **state space**
 - You can encode the maze as a **graph**
 - The **goal state** is explicit
-- Algorithms behave differently (**BFS vs DFS vs A* etc.**)
+- Algorithms behave differently 
 
 ## Overview
 
